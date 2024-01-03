@@ -31,7 +31,7 @@ class CustomAdapter(private val mList: List<ItemsViewModel>) : RecyclerView.Adap
         // Устанавливает текст в TextView из нашего класса ItemHolder
         holder.tutorial.text = itemsViewModel.tutorial
 
-        holder.decription.text = itemsViewModel.description
+        holder.price.text = itemsViewModel.description
     }
 
     // Возвращает количество элементов в списке
@@ -43,6 +43,6 @@ class CustomAdapter(private val mList: List<ItemsViewModel>) : RecyclerView.Adap
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val imageView: ImageView = itemView.findViewById(R.id.imageview)
         val tutorial: TextView = itemView.findViewById(R.id.tutorialTextView)
-        val decription: TextView = itemView.findViewById(R.id.descriptionTextView)
+        val price: TextView = itemView.findViewById(R.id.descriptionTextView)
     }
 }
